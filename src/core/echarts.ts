@@ -137,10 +137,10 @@ declare let global: any;
 
 type ModelFinder = modelUtil.ModelFinder;
 
-export const version = '5.4.2';
+export const version = '5.4.3';
 
 export const dependencies = {
-    zrender: '5.4.3'
+    zrender: '5.4.4'
 };
 
 const TEST_FRAME_REMAIN_TIME = 1;
@@ -318,7 +318,7 @@ type ECEventDefinition = {
     // TODO: Use ECActionEvent
     [key: string]: (...args: unknown[]) => void | boolean
 };
-type EChartsInitOpts = {
+export type EChartsInitOpts = {
     locale?: string | LocaleOption,
     renderer?: RendererType,
     devicePixelRatio?: number,
